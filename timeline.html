@@ -136,6 +136,7 @@ body {
 }
 				br{
 					user-select: none;
+					line-height: 1.5;
 				  }
 
 				h1,h2{
@@ -225,10 +226,66 @@ body {
   left: 0%;
   }
 }
+				
+.credbox {
+  background-color: transparent;
+  width: 100%;
+  height: auto;
+  border: 4px solid white;
+  text-align:center
+}
+#upbtn {
+  transition: opacity 3s;
+  opacity: 100%;	
+  display: none;
+  position: fixed;
+  border-radius:4px;		
+  bottom: 30px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border-color: #ffffff;
+  background-color: #4D4637;
+  color: #FFECC3;
+  cursor: pointer;
+  padding:5px;
+  padding-left:10px;
+  padding-right:10px;
+  
+}
+
+#upbtn:hover {
+  background-color: #555;
+}
+				
 </style>
 </head>
 <body>
 
+<button onclick="topFunction()" id="upbtn" title="Go to top">&uarr;</button>
+
+<script>
+// Get the button
+let mybutton = document.getElementById("upbtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+	
 <a href="https://rahilsarchive.github.io" class="previous">&#8249; Home </a>
 
  <h1> ~ Rahil's Timeline ~ </h1>
@@ -249,7 +306,7 @@ body {
 	    	<p> <b>&#8618; December 2nd 2022</b> - Official deployment of <a href="https://rahilcity.webflow.io" target="_blank">Rahil City</a>, a central space that contains all the different versions of myself. A place to view my professional work and other stories.</p>
  		<br>	
 		<p> <b>&#8618; June 19th 2022</b> - Version 2.0 of this website released. You can still access the <a href="https://rahilsarchive.github.io/ver1home" target="_blank">original version</a> for context, or to debate which one was better (Not many would pick the older one, I'm sure). </p>
- 		<br>
+ 		
  </div>
   </div>
  
@@ -271,7 +328,6 @@ body {
 <br>
 <p> <b>&#8618; January 8th 2021 </b> -
 Started making <a href="https://youtube.com/playlist?list=PLjLnR4BBHoYXG9U_jWu-4HxQm5jRWIhx4" target="_blank">"video essays"</a> on things that interests me. Hopefully will try to upload on a weekly schedule. First video was on Celeste.</p>
-<br>
     </div>
   </div>
   
@@ -302,7 +358,6 @@ Started working on something new, tone wise its very different from anything I h
 
 <br>
 <p><b>&#8618; January 31st 2020 </b> - Static, a project for my final year college completed. My First Video game made in Unity. Unreleased to the world and will stay that way.</p>
-<br>
 	 
 	 
 	 
@@ -318,7 +373,7 @@ Started working on something new, tone wise its very different from anything I h
 	  
       <p><b>&#8618; June 4th 2019 </b> - <a 
 href="https://youtu.be/AGlWFb301Nw" target="_blank">Dorian</a> a short film released. Had multiple endings.</p>
- <br>
+ 
     </div>
   </div>
   
@@ -332,7 +387,7 @@ href="https://youtu.be/AGlWFb301Nw" target="_blank">Dorian</a> a short film rele
 <br>
 		<p> <b>&#8618; July 16th 2018 </b> -
 		<a href=" https://youtu.be/p75u8J0Xus8" target="_blank">System As Sysdba</a> a single was released. It was about the education system. It was aimed at the education system, not the teachers.</p>
-		<br>
+		
     </div>
   </div>
   
@@ -356,7 +411,6 @@ href="https://youtu.be/AGlWFb301Nw" target="_blank">Dorian</a> a short film rele
 	<p><b>&#8618; March 21st 2017 </b> - 
 	<a href="https://youtu.be/rOfphJs6d24" target="_blank">"Lonely Boy left alone in the rain"</a> my first piece of music. I made it in 40 minutes. Its the most popular video on my channel. Sometimes not trying very hard can surprisingly be very effective.</p>
 
-    <br>
 	</div>
   </div>
   
@@ -366,7 +420,6 @@ href="https://youtu.be/AGlWFb301Nw" target="_blank">Dorian</a> a short film rele
       <h2>2015</h2>
 	  
       <p><b>&#8618; June 23rd 2015 </b> - <a href="https://www.youtube.com/rahilblade" target="_blank">YouTube</a> Channel Created </p>
-<br>
     
 	</div>
   </div>
